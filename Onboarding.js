@@ -25,13 +25,20 @@ export default class Onboarding extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar hidden={true} />
+        {/* <StatusBar hidden={true} /> */}
+        <StatusBar backgroundColor="transparent" translucent />
         <Swiper autoplay={true}>
           <View style={styles.slide}>
             <Image
+              style={styles.image}
+              // source={require('./woman-walk.gif')} />
+              source={{ uri: 'https://media3.giphy.com/media/wWue0rCDOphOE/giphy.gif' }} />
+            {/* // source={require('./video.mp4')} 
+              />  
+            {/* <Image
               source={require('./assets/images/bgd1.jpg')}
               style={styles.image}
-            />
+            /> */}
           </View>
           <View style={styles.slide}>
             <Image
